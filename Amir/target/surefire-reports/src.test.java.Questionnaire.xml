@@ -1,0 +1,119 @@
+<testsuite failures="0" name="src/test/java/Questionnaire.feature" skipped="0" tests="4" time="15.497517">
+  <testcase classname="src.test.java.Questionnaire" name="TC01 Get Questions" time="12.929106">
+    <system-out>* url 'https://october20.rnd.metricstream.com' ............................ passed
+* def signIn = callonce read('util/signin.feature') ....................... passed
+* def cooky = signIn.cooky ................................................ passed
+* def db = signIn.db ...................................................... passed
+* def contactName = signIn.contactName .................................... passed
+* configure cookies = cooky ............................................... passed
+Given path '/metricstream/api/7.0/icr/questionnaire/Questionnaire-100401' . passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response $.sectionList[*].questionList[*].questionId contains ["QUESTION-100216", "QUESTION-100215","QUESTION-100217"] . passed
+And match response $.sectionList[*].questionList[*].questionRank contains "4" . passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.Questionnaire" name="TC02 Update Questions" time="0.830535">
+    <system-out>* url 'https://october20.rnd.metricstream.com' ............................ passed
+* def signIn = callonce read('util/signin.feature') ....................... passed
+* def cooky = signIn.cooky ................................................ passed
+* def db = signIn.db ...................................................... passed
+* def contactName = signIn.contactName .................................... passed
+* configure cookies = cooky ............................................... passed
+Given path '/metricstream/api/7.0/icr/questionnaire/Questionnaire-100401' . passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response $.sectionList[*].questionList[*].questionId contains ["QUESTION-100216", "QUESTION-100215","QUESTION-100217"] . passed
+And match response $.sectionList[*].questionList[*].questionRank contains "4" . passed
+* url 'https://october20.rnd.metricstream.com' ............................ passed
+* def signIn = callonce read('util/signin.feature') ....................... passed
+* def cooky = signIn.cooky ................................................ passed
+* def db = signIn.db ...................................................... passed
+* def contactName = signIn.contactName .................................... passed
+* configure cookies = cooky ............................................... passed
+Given path '/metricstream/api/7.0/icr/questionnaire/Questionnaire-100401' . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response $.sectionList[*].questionList[*].questionId contains ["QUESTION-100216", "QUESTION-100215","QUESTION-100217","QUESTION-100219","QUESTION-100220"] . passed
+And match response $.sectionList[*].questionList[*].questionRank contains "6" . passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.Questionnaire" name="TC03 Sending blank cooky" time="0.646577">
+    <system-out>* url 'https://october20.rnd.metricstream.com' ............................ passed
+* def signIn = callonce read('util/signin.feature') ....................... passed
+* def cooky = signIn.cooky ................................................ passed
+* def db = signIn.db ...................................................... passed
+* def contactName = signIn.contactName .................................... passed
+* configure cookies = cooky ............................................... passed
+Given path '/metricstream/api/7.0/icr/questionnaire/Questionnaire-100401' . passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response $.sectionList[*].questionList[*].questionId contains ["QUESTION-100216", "QUESTION-100215","QUESTION-100217"] . passed
+And match response $.sectionList[*].questionList[*].questionRank contains "4" . passed
+* url 'https://october20.rnd.metricstream.com' ............................ passed
+* def signIn = callonce read('util/signin.feature') ....................... passed
+* def cooky = signIn.cooky ................................................ passed
+* def db = signIn.db ...................................................... passed
+* def contactName = signIn.contactName .................................... passed
+* configure cookies = cooky ............................................... passed
+Given path '/metricstream/api/7.0/icr/questionnaire/Questionnaire-100401' . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response $.sectionList[*].questionList[*].questionId contains ["QUESTION-100216", "QUESTION-100215","QUESTION-100217","QUESTION-100219","QUESTION-100220"] . passed
+And match response $.sectionList[*].questionList[*].questionRank contains "6" . passed
+* url 'https://october20.rnd.metricstream.com' ............................ passed
+* def signIn = callonce read('util/signin.feature') ....................... passed
+* def cooky = signIn.cooky ................................................ passed
+* def db = signIn.db ...................................................... passed
+* def contactName = signIn.contactName .................................... passed
+* configure cookies = cooky ............................................... passed
+Given path '/metricstream/api/7.0/icr/questionnaire/Questionnaire-100401' . passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response $.sectionList[*].questionList[*].questionId contains ["QUESTION-100216", "QUESTION-100215","QUESTION-100217"] . passed
+And match response $.sectionList[*].questionList[*].questionRank contains "4" . passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.Questionnaire" name="TC03 Logout of the application" time="1.091299">
+    <system-out>* url 'https://october20.rnd.metricstream.com' ............................ passed
+* def signIn = callonce read('util/signin.feature') ....................... passed
+* def cooky = signIn.cooky ................................................ passed
+* def db = signIn.db ...................................................... passed
+* def contactName = signIn.contactName .................................... passed
+* configure cookies = cooky ............................................... passed
+Given path '/metricstream/api/7.0/icr/questionnaire/Questionnaire-100401' . passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response $.sectionList[*].questionList[*].questionId contains ["QUESTION-100216", "QUESTION-100215","QUESTION-100217"] . passed
+And match response $.sectionList[*].questionList[*].questionRank contains "4" . passed
+* url 'https://october20.rnd.metricstream.com' ............................ passed
+* def signIn = callonce read('util/signin.feature') ....................... passed
+* def cooky = signIn.cooky ................................................ passed
+* def db = signIn.db ...................................................... passed
+* def contactName = signIn.contactName .................................... passed
+* configure cookies = cooky ............................................... passed
+Given path '/metricstream/api/7.0/icr/questionnaire/Questionnaire-100401' . passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match response $.sectionList[*].questionList[*].questionId contains ["QUESTION-100216", "QUESTION-100215","QUESTION-100217","QUESTION-100219","QUESTION-100220"] . passed
+And match response $.sectionList[*].questionList[*].questionRank contains "6" . passed
+* url 'https://october20.rnd.metricstream.com' ............................ passed
+* def signIn = callonce read('util/signin.feature') ....................... passed
+* def cooky = signIn.cooky ................................................ passed
+* def db = signIn.db ...................................................... passed
+* def contactName = signIn.contactName .................................... passed
+* configure cookies = cooky ............................................... passed
+Given path '/metricstream/api/7.0/icr/questionnaire/Questionnaire-100401' . passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response $.sectionList[*].questionList[*].questionId contains ["QUESTION-100216", "QUESTION-100215","QUESTION-100217"] . passed
+And match response $.sectionList[*].questionList[*].questionRank contains "4" . passed
+* url 'https://october20.rnd.metricstream.com' ............................ passed
+* def signIn = callonce read('util/signin.feature') ....................... passed
+* def cooky = signIn.cooky ................................................ passed
+* def db = signIn.db ...................................................... passed
+* def contactName = signIn.contactName .................................... passed
+* configure cookies = cooky ............................................... passed
+Given path '/metricstream/auth/logout' .................................... passed
+When method Get ........................................................... passed
+Then status 200 ........................................................... passed
+And match responseCookies !contains { JSESSION_ID: "#notnull" } ........... passed</system-out>
+  </testcase>
+</testsuite>

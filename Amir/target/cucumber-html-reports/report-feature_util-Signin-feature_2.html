@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: util/Signin.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+            <td>09 Oct 2020, 21:09</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">util/Signin.feature</td>
+                    <td      class="passed"    >13</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">13</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="6799827600">6s 799ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">util/Signin.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Call Login</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">733ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://october20.rnd.metricstream.com'</span>
+  
+  <span class="lead-duration duration">010ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>21:09:07.917 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def config = { username: 'METRICSTREAM', password: 'password', url: 'jdbc:oracle:thin:@10.100.1.174:39761:orcl', driverClassName: 'oracle.jdbc.OracleDriver'}</span>
+  
+  <span class="lead-duration duration">218ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def DbUtils = Java.type('DbUtils')</span>
+  
+  <span class="lead-duration duration">030ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def db = new DbUtils(config)</span>
+  
+  <span class="lead-duration duration">209ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def getRand =</span>
+  
+  <span class="lead-duration duration">183ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>function(max) {
+    return Math.floor(Math.random() * max);
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def contactName = &quot;Request_MetricStream_Def&quot; + getRand(100)</span>
+  
+  <span class="lead-duration duration">080ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">6s 066ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Authentication and login</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/metricstream/auth/basic'</span>
+  
+  <span class="lead-duration duration">009ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">form field username = 'SYSTEMI'</span>
+  
+  <span class="lead-duration duration">009ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">form field password = 'welcome*12'</span>
+  
+  <span class="lead-duration duration">007ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">6s 034ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>21:09:12.128 request:
+1 &gt; POST https://october20.rnd.metricstream.com/metricstream/auth/basic
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 36
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 &gt; Host: october20.rnd.metricstream.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_181)
+username=SYSTEMI&amp;password=welcome*12
+
+21:09:14.228 response time in milliseconds: 2099.02
+1 &lt; 302
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 0
+1 &lt; Content-Security-Policy: frame-ancestors 'self';
+1 &lt; Date: Fri, 09 Oct 2020 15:39:13 GMT
+1 &lt; Expires: 0
+1 &lt; Location: /ui/
+1 &lt; Pragma: no-cache
+1 &lt; Referrer-Policy: strict-origin
+1 &lt; Server: nginx
+1 &lt; Set-Cookie: [JSESSION_ID=3f87fc46-5a70-4a10-9734-debcce4eedfe; Path=/metricstream; Secure; HttpOnly; SameSite=lax, Csrf-Token=c98a4131ef3399101193b21d5b039d7b6fadb0fd6ecbba4c5ba9f7032c4e4157; Path=/; Secure, rememberMe=deleteMe; Path=/metricstream; Max-Age=0; Expires=Thu, 08-Oct-2020 15:38:04 GMT; Secure, totalSessionTime=&quot;&quot;; Path=/; Secure, totalSessionTimeWarning=&quot;&quot;; Path=/; Secure, X-TargetUrl=&quot;&quot;; Path=/; Secure, X-DocLink-Token=&quot;iJBxeMZCWKWFh8uVx7li/g==&quot;; Version=1; Path=/; Secure; HttpOnly, totalSessionTime=1800; Path=/; Secure, totalSessionTimeWarning=60; Path=/; Secure]
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains
+1 &lt; Vary: User-Agent
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 1; mode=block
+
+21:09:14.245 request:
+2 &gt; GET https://october20.rnd.metricstream.com/metricstream/auth/basic
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+2 &gt; Cookie: Csrf-Token=c98a4131ef3399101193b21d5b039d7b6fadb0fd6ecbba4c5ba9f7032c4e4157; JSESSION_ID=3f87fc46-5a70-4a10-9734-debcce4eedfe; X-DocLink-Token=iJBxeMZCWKWFh8uVx7li/g==; X-TargetUrl=&quot;&quot;; totalSessionTime=1800; totalSessionTimeWarning=60
+2 &gt; Host: october20.rnd.metricstream.com
+2 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_181)
+
+21:09:14.561 response time in milliseconds: 310.71
+2 &lt; 200
+2 &lt; Accept-Ranges: bytes
+2 &lt; Cache-Control: max-age=604800
+2 &lt; Connection: keep-alive
+2 &lt; Content-Security-Policy: frame-ancestors 'self';
+2 &lt; Content-Type: text/html; charset=utf-8
+2 &lt; Date: Fri, 09 Oct 2020 15:39:14 GMT
+2 &lt; ETag: &quot;77b-5b05f31f3db80-gzip&quot;
+2 &lt; Expires: 0
+2 &lt; Last-Modified: Mon, 28 Sep 2020 12:56:30 GMT
+2 &lt; Referrer-Policy: strict-origin
+2 &lt; Server: nginx
+2 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains
+2 &lt; Vary: Accept-Encoding,User-Agent
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; X-XSS-Protection: 1; mode=block
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-COMPATIBLE&quot; content=&quot;IE=edge, chrome=1&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;title&gt;MetricStream&lt;/title&gt;
+    &lt;link href=&quot;/ui/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link href=&quot;/ui/css/msi.css?q=08b4d17b-8e4c-4daf-b3c0-6345779de1ca&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;meta name=&quot;version&quot; content=&quot;08b4d17b-8e4c-4daf-b3c0-6345779de1ca&quot;&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;/ui/images/favicon-32x32.png&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/ui/js/libs/ext/resources/css/ext-all.css?q=08b4d17b-8e4c-4daf-b3c0-6345779de1ca&quot;&gt;
+&lt;/head&gt;
+&lt;body class=&quot;background-dark&quot;&gt;
+    &lt;div id=&quot;nav-header&quot; class=&quot;container-fluid&quot;&gt;&lt;/div&gt;
+     &lt;div class=&quot;msi-splash&quot;&gt;
+            &lt;div class=&quot;splash-content&quot;&gt;
+                &lt;div class=&quot;content-loader&quot;&gt;
+			&lt;img src=&quot;/images/logo-loader.gif&quot; width=&quot;60%&quot; height=&quot;&quot;/&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;!-- Sidebar --&gt;
+    &lt;div id=&quot;sidebar-wrapper&quot; class=&quot;collapse&quot;&gt;
+        &lt;ul class=&quot;sidebar-nav r-sidebar&quot;&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;content-wrapper container-fluid&quot; &gt;
+        &lt;div id=&quot;databrowser-panel&quot;&gt;&lt;/div&gt;
+        &lt;div id=&quot;content&quot; role=&quot;main&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;section id=&quot;msiContextualPane&quot; class=&quot;msi fade hide&quot;&gt;
+        &lt;i class=&quot;spa close ctxPane-close msi-tooltip&quot; title=&quot;Close&quot; data-action=&quot;close&quot;&gt;&amp;#215;&lt;/i&gt;
+		&lt;div class=&quot;ctxPane-content&quot;&gt;&lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section id=&quot;msiModal&quot;&gt;
+    &lt;/section&gt;
+
+    &lt;div id=&quot;footer&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;/ui/js/locale.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;script data-main=&quot;/ui/js/main.08b4d17b-8e4c-4daf-b3c0-6345779de1ca&quot; src=&quot;/ui/js/libs/require/require.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;p id=&quot;announcerPlaceholder&quot; class=&quot;sr-only&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;false&quot;&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+21:09:14.757 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 13; columnNumber: 3; The element type &quot;link&quot; must be terminated by the matching end-tag &quot;&lt;/link&gt;&quot;.</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">def cooky = responseCookies</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">print cooky</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>21:09:14.764 [print] {
+  &quot;Csrf-Token&quot;: {
+    &quot;name&quot;: &quot;Csrf-Token&quot;,
+    &quot;value&quot;: &quot;c98a4131ef3399101193b21d5b039d7b6fadb0fd6ecbba4c5ba9f7032c4e4157&quot;,
+    &quot;domain&quot;: &quot;october20.rnd.metricstream.com&quot;,
+    &quot;path&quot;: &quot;/&quot;,
+    &quot;persistent&quot;: &quot;false&quot;,
+    &quot;secure&quot;: &quot;true&quot;
+  },
+  &quot;JSESSION_ID&quot;: {
+    &quot;name&quot;: &quot;JSESSION_ID&quot;,
+    &quot;value&quot;: &quot;3f87fc46-5a70-4a10-9734-debcce4eedfe&quot;,
+    &quot;domain&quot;: &quot;october20.rnd.metricstream.com&quot;,
+    &quot;path&quot;: &quot;/metricstream&quot;,
+    &quot;persistent&quot;: &quot;false&quot;,
+    &quot;secure&quot;: &quot;true&quot;
+  },
+  &quot;X-DocLink-Token&quot;: {
+    &quot;name&quot;: &quot;X-DocLink-Token&quot;,
+    &quot;value&quot;: &quot;iJBxeMZCWKWFh8uVx7li/g==&quot;,
+    &quot;domain&quot;: &quot;october20.rnd.metricstream.com&quot;,
+    &quot;path&quot;: &quot;/&quot;,
+    &quot;persistent&quot;: &quot;false&quot;,
+    &quot;secure&quot;: &quot;true&quot;
+  },
+  &quot;X-TargetUrl&quot;: {
+    &quot;name&quot;: &quot;X-TargetUrl&quot;,
+    &quot;value&quot;: &quot;\&quot;\&quot;&quot;,
+    &quot;domain&quot;: &quot;october20.rnd.metricstream.com&quot;,
+    &quot;path&quot;: &quot;/&quot;,
+    &quot;persistent&quot;: &quot;false&quot;,
+    &quot;secure&quot;: &quot;true&quot;
+  },
+  &quot;totalSessionTime&quot;: {
+    &quot;name&quot;: &quot;totalSessionTime&quot;,
+    &quot;value&quot;: &quot;1800&quot;,
+    &quot;domain&quot;: &quot;october20.rnd.metricstream.com&quot;,
+    &quot;path&quot;: &quot;/&quot;,
+    &quot;persistent&quot;: &quot;false&quot;,
+    &quot;secure&quot;: &quot;true&quot;
+  },
+  &quot;totalSessionTimeWarning&quot;: {
+    &quot;name&quot;: &quot;totalSessionTimeWarning&quot;,
+    &quot;value&quot;: &quot;60&quot;,
+    &quot;domain&quot;: &quot;october20.rnd.metricstream.com&quot;,
+    &quot;path&quot;: &quot;/&quot;,
+    &quot;persistent&quot;: &quot;false&quot;,
+    &quot;secure&quot;: &quot;true&quot;
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

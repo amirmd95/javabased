@@ -1,0 +1,62 @@
+{
+   "sectionList":[
+      {
+         "sectionId":"SECTION-100200",
+         "sectionName":"Section 1",
+         "questionList":[
+            {
+               "questionId":"QUESTION-100200",
+               "questionName":"Question-number type",
+               "responseType":"Number",
+               "responseTypeStored":"3",
+               "questionDescription":"",
+               "questionRank":1
+            },
+            {
+               "questionId":"QUESTION-100201",
+               "questionName":"Question-Amount type",
+               "responseType":"Amount",
+               "responseTypeStored":"1",
+               "questionDescription":"",
+               "questionRank":2
+            },
+            {
+               "questionId":"QUESTION-100202",
+               "questionName":"Question-Yes or No Type",
+               "responseType":"Yes or No",
+               "responseTypeStored":"6",
+               "questionDescription":"",
+               "questionRank":3,
+               "valueList":[
+                  
+               ]
+            },
+            {
+               "questionId":"QUESTION-100203",
+               "questionName":"Question-dropdown type",
+               "responseType":"Dropdown",
+               "responseTypeStored":"7",
+               "questionDescription":"",
+               "questionRank":4,
+               "valueList":[
+                  {
+                     "value":"Low",
+                     "score":"100",
+                     "storedValue":"LOV100002"
+                  },
+                  {
+                     "value":"High",
+                     "score":"1000",
+                     "storedValue":"LOV100000"
+                  },
+                  {
+                     "value":"Medium",
+                     "score":"500",
+                     "storedValue":"LOV100001"
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

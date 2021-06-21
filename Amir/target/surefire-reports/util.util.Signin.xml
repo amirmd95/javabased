@@ -1,0 +1,17 @@
+<testsuite failures="0" name="util/util/Signin.feature" skipped="0" tests="1" time="3.532251">
+  <testcase classname="util.util.Signin" name="Authentication and login" time="3.532251">
+    <system-out>* url 'https://icrreg2.rnd.metricstream.com/' ............................. passed
+* def config = { username: 'METRICSTREAM', password: 'password', url: 'jdbc:oracle:thin:@DB:10.100.1.77:34355:orcl', driverClassName: 'oracle.jdbc.OracleDriver'} . passed
+* def DbUtils = Java.type('DbUtils') ...................................... passed
+* def db = new DbUtils(config) ............................................ passed
+* def getRand = ........................................................... passed
+* def contactName = "Request_MetricStream_Def" + getRand(100) ............. passed
+Given path '/metricstream/auth/basic' ..................................... passed
+And form field username = 'SYSTEMI' ....................................... passed
+And form field password = 'welcome*13' .................................... passed
+When method POST .......................................................... passed
+Then status 200 ........................................................... passed
+Then def cooky = responseCookies .......................................... passed
+Then print cooky .......................................................... passed</system-out>
+  </testcase>
+</testsuite>

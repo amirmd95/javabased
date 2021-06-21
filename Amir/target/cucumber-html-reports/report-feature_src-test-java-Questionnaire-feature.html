@@ -1,0 +1,2656 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: src/test/java/Questionnaire.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Amir</td>
+            <td>22 Dec 2020, 17:13</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">src/test/java/Questionnaire.feature</td>
+                    <td      class="passed"    >57</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">57</td>
+
+          <td  class="passed"    >4</td>
+          <td >0</td>
+          <td class="total">4</td>
+
+          <td class="duration" data-value="24357260000">24s 357ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+  </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">src/test/java/Questionnaire.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Fetch Questions</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">20s 889ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://october20.rnd.metricstream.com'</span>
+  
+  <span class="lead-duration duration">011ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>01:01:07.573 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def signIn = callonce read('util/signin.feature')</span>
+  
+  <span class="lead-duration duration">11s 935ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>01:01:19.622 &lt;&lt; lock released, cached callonce: read('util/signin.feature')</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention"></span>
+  <span class="name">/Karate/Amir/src/test/java/util/signin.feature</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url 'https://october20.rnd.metricstream.com'</span>
+  
+  <span class="lead-duration duration">047ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>01:01:07.673 &gt;&gt; lock acquired, begin callonce: read('util/signin.feature')</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def config = { username: 'METRICSTREAM', password: 'password', url: 'jdbc:oracle:thin:@10.100.1.174:39033:orcl', driverClassName: 'oracle.jdbc.OracleDriver'}</span>
+  
+  <span class="lead-duration duration">607ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def DbUtils = Java.type('DbUtils')</span>
+  
+  <span class="lead-duration duration">040ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def db = new DbUtils(config)</span>
+  
+  <span class="lead-duration duration">170ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def getRand =</span>
+  
+  <span class="lead-duration duration">023ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>function(max) {
+    return Math.floor(Math.random() * max);
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def contactName = &quot;Request_MetricStream_Def&quot; + getRand(100)</span>
+  
+  <span class="lead-duration duration">105ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/metricstream/auth/basic'</span>
+  
+  <span class="lead-duration duration">011ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">form field username = 'SYSTEMI'</span>
+  
+  <span class="lead-duration duration">011ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">form field password = 'welcome*12'</span>
+  
+  <span class="lead-duration duration">008ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method POST</span>
+  
+  <span class="lead-duration duration">7s 829ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>01:01:16.878 request:
+1 &gt; POST https://october20.rnd.metricstream.com/metricstream/auth/basic
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 36
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 &gt; Host: october20.rnd.metricstream.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_181)
+username=SYSTEMI&amp;password=welcome*12
+
+01:01:18.983 response time in milliseconds: 2095.31
+1 &lt; 302
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 0
+1 &lt; Content-Security-Policy: frame-ancestors 'self';
+1 &lt; Date: Tue, 06 Oct 2020 19:31:19 GMT
+1 &lt; Expires: 0
+1 &lt; Location: /ui/
+1 &lt; Pragma: no-cache
+1 &lt; Referrer-Policy: strict-origin
+1 &lt; Server: nginx
+1 &lt; Set-Cookie: [JSESSION_ID=12979660-101a-48c6-8bb6-34eaed2afc39; Path=/metricstream; Secure; HttpOnly; SameSite=lax, Csrf-Token=2b9e8a309b224934af152ffac3604250b3470c6b02b2fe24682225ae093c809c; Path=/; Secure, rememberMe=deleteMe; Path=/metricstream; Max-Age=0; Expires=Mon, 05-Oct-2020 19:30:10 GMT; Secure, totalSessionTime=&quot;&quot;; Path=/; Secure, totalSessionTimeWarning=&quot;&quot;; Path=/; Secure, X-TargetUrl=&quot;&quot;; Path=/; Secure, X-DocLink-Token=&quot;tbkoUksZAACqtnVSY7V1YQ==&quot;; Version=1; Path=/; Secure; HttpOnly, totalSessionTime=1800; Path=/; Secure, totalSessionTimeWarning=60; Path=/; Secure]
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains
+1 &lt; Vary: User-Agent
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 1; mode=block
+
+01:01:19.004 request:
+2 &gt; GET https://october20.rnd.metricstream.com/metricstream/auth/basic
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+2 &gt; Cookie: Csrf-Token=2b9e8a309b224934af152ffac3604250b3470c6b02b2fe24682225ae093c809c; JSESSION_ID=12979660-101a-48c6-8bb6-34eaed2afc39; X-DocLink-Token=tbkoUksZAACqtnVSY7V1YQ==; X-TargetUrl=&quot;&quot;; totalSessionTime=1800; totalSessionTimeWarning=60
+2 &gt; Host: october20.rnd.metricstream.com
+2 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_181)
+
+01:01:19.423 response time in milliseconds: 410.69
+2 &lt; 200
+2 &lt; Accept-Ranges: bytes
+2 &lt; Cache-Control: max-age=604800
+2 &lt; Connection: keep-alive
+2 &lt; Content-Security-Policy: frame-ancestors 'self';
+2 &lt; Content-Type: text/html; charset=utf-8
+2 &lt; Date: Tue, 06 Oct 2020 19:31:19 GMT
+2 &lt; ETag: &quot;77b-5b05f31f3db80-gzip&quot;
+2 &lt; Expires: 0
+2 &lt; Last-Modified: Mon, 28 Sep 2020 12:56:30 GMT
+2 &lt; Referrer-Policy: strict-origin
+2 &lt; Server: nginx
+2 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains
+2 &lt; Vary: Accept-Encoding,User-Agent
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; X-XSS-Protection: 1; mode=block
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-COMPATIBLE&quot; content=&quot;IE=edge, chrome=1&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;title&gt;MetricStream&lt;/title&gt;
+    &lt;link href=&quot;/ui/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link href=&quot;/ui/css/msi.css?q=08b4d17b-8e4c-4daf-b3c0-6345779de1ca&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;meta name=&quot;version&quot; content=&quot;08b4d17b-8e4c-4daf-b3c0-6345779de1ca&quot;&gt;
+    &lt;link rel=&quot;icon&quot; type=&quot;image/png&quot; href=&quot;/ui/images/favicon-32x32.png&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/ui/js/libs/ext/resources/css/ext-all.css?q=08b4d17b-8e4c-4daf-b3c0-6345779de1ca&quot;&gt;
+&lt;/head&gt;
+&lt;body class=&quot;background-dark&quot;&gt;
+    &lt;div id=&quot;nav-header&quot; class=&quot;container-fluid&quot;&gt;&lt;/div&gt;
+     &lt;div class=&quot;msi-splash&quot;&gt;
+            &lt;div class=&quot;splash-content&quot;&gt;
+                &lt;div class=&quot;content-loader&quot;&gt;
+			&lt;img src=&quot;/images/logo-loader.gif&quot; width=&quot;60%&quot; height=&quot;&quot;/&gt;
+
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;!-- Sidebar --&gt;
+    &lt;div id=&quot;sidebar-wrapper&quot; class=&quot;collapse&quot;&gt;
+        &lt;ul class=&quot;sidebar-nav r-sidebar&quot;&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;content-wrapper container-fluid&quot; &gt;
+        &lt;div id=&quot;databrowser-panel&quot;&gt;&lt;/div&gt;
+        &lt;div id=&quot;content&quot; role=&quot;main&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;section id=&quot;msiContextualPane&quot; class=&quot;msi fade hide&quot;&gt;
+        &lt;i class=&quot;spa close ctxPane-close msi-tooltip&quot; title=&quot;Close&quot; data-action=&quot;close&quot;&gt;&amp;#215;&lt;/i&gt;
+		&lt;div class=&quot;ctxPane-content&quot;&gt;&lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section id=&quot;msiModal&quot;&gt;
+    &lt;/section&gt;
+
+    &lt;div id=&quot;footer&quot;&gt;&lt;/div&gt;
+    &lt;script src=&quot;/ui/js/locale.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;script data-main=&quot;/ui/js/main.08b4d17b-8e4c-4daf-b3c0-6345779de1ca&quot; src=&quot;/ui/js/libs/require/require.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;p id=&quot;announcerPlaceholder&quot; class=&quot;sr-only&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;false&quot;&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+01:01:19.597 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 13; columnNumber: 3; The element type &quot;link&quot; must be terminated by the matching end-tag &quot;&lt;/link&gt;&quot;.</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">def cooky = responseCookies</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">print cooky</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>01:01:19.607 [print] {
+  &quot;Csrf-Token&quot;: {
+    &quot;name&quot;: &quot;Csrf-Token&quot;,
+    &quot;value&quot;: &quot;2b9e8a309b224934af152ffac3604250b3470c6b02b2fe24682225ae093c809c&quot;,
+    &quot;domain&quot;: &quot;october20.rnd.metricstream.com&quot;,
+    &quot;path&quot;: &quot;/&quot;,
+    &quot;persistent&quot;: &quot;false&quot;,
+    &quot;secure&quot;: &quot;true&quot;
+  },
+  &quot;JSESSION_ID&quot;: {
+    &quot;name&quot;: &quot;JSESSION_ID&quot;,
+    &quot;value&quot;: &quot;12979660-101a-48c6-8bb6-34eaed2afc39&quot;,
+    &quot;domain&quot;: &quot;october20.rnd.metricstream.com&quot;,
+    &quot;path&quot;: &quot;/metricstream&quot;,
+    &quot;persistent&quot;: &quot;false&quot;,
+    &quot;secure&quot;: &quot;true&quot;
+  },
+  &quot;X-DocLink-Token&quot;: {
+    &quot;name&quot;: &quot;X-DocLink-Token&quot;,
+    &quot;value&quot;: &quot;tbkoUksZAACqtnVSY7V1YQ==&quot;,
+    &quot;domain&quot;: &quot;october20.rnd.metricstream.com&quot;,
+    &quot;path&quot;: &quot;/&quot;,
+    &quot;persistent&quot;: &quot;false&quot;,
+    &quot;secure&quot;: &quot;true&quot;
+  },
+  &quot;X-TargetUrl&quot;: {
+    &quot;name&quot;: &quot;X-TargetUrl&quot;,
+    &quot;value&quot;: &quot;\&quot;\&quot;&quot;,
+    &quot;domain&quot;: &quot;october20.rnd.metricstream.com&quot;,
+    &quot;path&quot;: &quot;/&quot;,
+    &quot;persistent&quot;: &quot;false&quot;,
+    &quot;secure&quot;: &quot;true&quot;
+  },
+  &quot;totalSessionTime&quot;: {
+    &quot;name&quot;: &quot;totalSessionTime&quot;,
+    &quot;value&quot;: &quot;1800&quot;,
+    &quot;domain&quot;: &quot;october20.rnd.metricstream.com&quot;,
+    &quot;path&quot;: &quot;/&quot;,
+    &quot;persistent&quot;: &quot;false&quot;,
+    &quot;secure&quot;: &quot;true&quot;
+  },
+  &quot;totalSessionTimeWarning&quot;: {
+    &quot;name&quot;: &quot;totalSessionTimeWarning&quot;,
+    &quot;value&quot;: &quot;60&quot;,
+    &quot;domain&quot;: &quot;october20.rnd.metricstream.com&quot;,
+    &quot;path&quot;: &quot;/&quot;,
+    &quot;persistent&quot;: &quot;false&quot;,
+    &quot;secure&quot;: &quot;true&quot;
+  }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def cooky = signIn.cooky</span>
+  
+  <span class="lead-duration duration">049ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def db = signIn.db</span>
+  
+  <span class="lead-duration duration">013ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def contactName = signIn.contactName</span>
+  
+  <span class="lead-duration duration">019ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure cookies = cooky</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">899ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">TC01 Get Questions</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/metricstream/api/7.0/icr/questionnaire/Questionnaire-100401'</span>
+  
+  <span class="lead-duration duration">009ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+  
+  <span class="lead-duration duration">868ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>01:01:19.728 request:
+1 &gt; GET https://october20.rnd.metricstream.com/metricstream/api/7.0/icr/questionnaire/Questionnaire-100401
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Cookie: Csrf-Token=2b9e8a309b224934af152ffac3604250b3470c6b02b2fe24682225ae093c809c; JSESSION_ID=12979660-101a-48c6-8bb6-34eaed2afc39; X-DocLink-Token=tbkoUksZAACqtnVSY7V1YQ==; X-TargetUrl=&quot;&quot;; totalSessionTime=1800; totalSessionTimeWarning=60
+1 &gt; Host: october20.rnd.metricstream.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_181)
+
+01:01:20.571 response time in milliseconds: 835.92
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy: frame-ancestors 'self';
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 06 Oct 2020 19:31:20 GMT
+1 &lt; Expires: 0
+1 &lt; Pragma: no-cache
+1 &lt; Referrer-Policy: strict-origin
+1 &lt; Server: nginx
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains
+1 &lt; Vary: User-Agent
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 1; mode=block
+{&quot;sectionList&quot;:[{&quot;sectionId&quot;:&quot;SECTION-100203&quot;,&quot;sectionName&quot;:&quot;Section 1 Data max Section 1 Data max Section 1 Data max Section 1 Data maxSection 1 Data max Section 1 Data max Section 1 Data max Section 1 Data maxSection 1 Data max Section 1 Data max Section 1 Data max Section 1 Data maxSection 1 Data max Section 1 D&quot;,&quot;questionList&quot;:[{&quot;questionId&quot;:&quot;QUESTION-100215&quot;,&quot;questionName&quot;:&quot;Q3 Checkbox  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;Checkbox&quot;,&quot;responseTypeStored&quot;:&quot;11&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;3&quot;,&quot;valueList&quot;:[{&quot;value&quot;:&quot; Obsolete&quot;,&quot;storedValue&quot;:&quot;LOV100014&quot;},{&quot;value&quot;:&quot;New &quot;,&quot;storedValue&quot;:&quot;LOV100012&quot;},{&quot;value&quot;:&quot; old &quot;,&quot;storedValue&quot;:&quot;LOV100013&quot;}]},{&quot;questionId&quot;:&quot;QUESTION-100216&quot;,&quot;questionName&quot;:&quot;Q4  NEW &quot;,&quot;responseType&quot;:&quot;Data Lookup&quot;,&quot;responseTypeStored&quot;:&quot;12&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;4&quot;,&quot;questionInfolet&quot;:&quot;MS_QSM_GRC_AOC&quot;,&quot;questionInfoletStoredValue&quot;:&quot;OBJECT_ID&quot;,&quot;questionInfoletDisplayedValue&quot;:&quot;OBJECT_ID&quot;},{&quot;questionId&quot;:&quot;QUESTION-100217&quot;,&quot;questionName&quot;:&quot;Q5  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;Date&quot;,&quot;responseTypeStored&quot;:&quot;2&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;5&quot;},{&quot;questionId&quot;:&quot;QUESTION-100218&quot;,&quot;questionName&quot;:&quot;Q6  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;Dropdown&quot;,&quot;responseTypeStored&quot;:&quot;7&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;6&quot;,&quot;valueList&quot;:[{&quot;value&quot;:&quot;High &quot;,&quot;storedValue&quot;:&quot;LOV100015&quot;},{&quot;value&quot;:&quot; Low &quot;,&quot;storedValue&quot;:&quot;LOV100016&quot;}]},{&quot;questionId&quot;:&quot;QUESTION-100219&quot;,&quot;questionName&quot;:&quot;Q7  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;Number&quot;,&quot;responseTypeStored&quot;:&quot;3&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;7&quot;},{&quot;questionId&quot;:&quot;QUESTION-100220&quot;,&quot;questionName&quot;:&quot;Q8  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;List of Values&quot;,&quot;responseTypeStored&quot;:&quot;4&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;8&quot;,&quot;valueList&quot;:[{&quot;value&quot;:&quot;GET &quot;,&quot;storedValue&quot;:&quot;LOV100017&quot;},{&quot;value&quot;:&quot; POST&quot;,&quot;storedValue&quot;:&quot;LOV100018&quot;}]},{&quot;questionId&quot;:&quot;QUESTION-100221&quot;,&quot;questionName&quot;:&quot;Q10  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;Radio Button&quot;,&quot;responseTypeStored&quot;:&quot;10&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;10&quot;,&quot;valueList&quot;:[{&quot;value&quot;:&quot;NEW &quot;,&quot;storedValue&quot;:&quot;LOV100019&quot;},{&quot;value&quot;:&quot; OLD&quot;,&quot;storedValue&quot;:&quot;LOV100020&quot;}]},{&quot;questionId&quot;:&quot;QUESTION-100224&quot;,&quot;questionName&quot;:&quot;Q13  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;Yes or No&quot;,&quot;responseTypeStored&quot;:&quot;6&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;13&quot;,&quot;valueList&quot;:[]}]}]}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response $.sectionList[*].questionList[*].questionId contains [&quot;QUESTION-100216&quot;, &quot;QUESTION-100215&quot;,&quot;QUESTION-100217&quot;]</span>
+  
+  <span class="lead-duration duration">009ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response $.sectionList[*].questionList[*].questionRank contains &quot;4&quot;</span>
+  
+  <span class="lead-duration duration">012ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">007ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-12">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-12" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-13" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://october20.rnd.metricstream.com'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>01:01:20.653 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def signIn = callonce read('util/signin.feature')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def cooky = signIn.cooky</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def db = signIn.db</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def contactName = signIn.contactName</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure cookies = cooky</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">823ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">TC02 Update Questions</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-15" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-16" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/metricstream/api/7.0/icr/questionnaire/Questionnaire-100401'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">809ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>01:01:20.676 request:
+1 &gt; GET https://october20.rnd.metricstream.com/metricstream/api/7.0/icr/questionnaire/Questionnaire-100401
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Cookie: Csrf-Token=2b9e8a309b224934af152ffac3604250b3470c6b02b2fe24682225ae093c809c; JSESSION_ID=12979660-101a-48c6-8bb6-34eaed2afc39; X-DocLink-Token=tbkoUksZAACqtnVSY7V1YQ==; X-TargetUrl=&quot;&quot;; totalSessionTime=1800; totalSessionTimeWarning=60
+1 &gt; Host: october20.rnd.metricstream.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_181)
+
+01:01:21.463 response time in milliseconds: 779.02
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy: frame-ancestors 'self';
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 06 Oct 2020 19:31:21 GMT
+1 &lt; Expires: 0
+1 &lt; Pragma: no-cache
+1 &lt; Referrer-Policy: strict-origin
+1 &lt; Server: nginx
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains
+1 &lt; Vary: User-Agent
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 1; mode=block
+{&quot;sectionList&quot;:[{&quot;sectionId&quot;:&quot;SECTION-100203&quot;,&quot;sectionName&quot;:&quot;Section 1 Data max Section 1 Data max Section 1 Data max Section 1 Data maxSection 1 Data max Section 1 Data max Section 1 Data max Section 1 Data maxSection 1 Data max Section 1 Data max Section 1 Data max Section 1 Data maxSection 1 Data max Section 1 D&quot;,&quot;questionList&quot;:[{&quot;questionId&quot;:&quot;QUESTION-100215&quot;,&quot;questionName&quot;:&quot;Q3 Checkbox  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;Checkbox&quot;,&quot;responseTypeStored&quot;:&quot;11&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;3&quot;,&quot;valueList&quot;:[{&quot;value&quot;:&quot; Obsolete&quot;,&quot;storedValue&quot;:&quot;LOV100014&quot;},{&quot;value&quot;:&quot;New &quot;,&quot;storedValue&quot;:&quot;LOV100012&quot;},{&quot;value&quot;:&quot; old &quot;,&quot;storedValue&quot;:&quot;LOV100013&quot;}]},{&quot;questionId&quot;:&quot;QUESTION-100216&quot;,&quot;questionName&quot;:&quot;Q4  NEW &quot;,&quot;responseType&quot;:&quot;Data Lookup&quot;,&quot;responseTypeStored&quot;:&quot;12&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;4&quot;,&quot;questionInfolet&quot;:&quot;MS_QSM_GRC_AOC&quot;,&quot;questionInfoletStoredValue&quot;:&quot;OBJECT_ID&quot;,&quot;questionInfoletDisplayedValue&quot;:&quot;OBJECT_ID&quot;},{&quot;questionId&quot;:&quot;QUESTION-100217&quot;,&quot;questionName&quot;:&quot;Q5  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;Date&quot;,&quot;responseTypeStored&quot;:&quot;2&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;5&quot;},{&quot;questionId&quot;:&quot;QUESTION-100218&quot;,&quot;questionName&quot;:&quot;Q6  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;Dropdown&quot;,&quot;responseTypeStored&quot;:&quot;7&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;6&quot;,&quot;valueList&quot;:[{&quot;value&quot;:&quot;High &quot;,&quot;storedValue&quot;:&quot;LOV100015&quot;},{&quot;value&quot;:&quot; Low &quot;,&quot;storedValue&quot;:&quot;LOV100016&quot;}]},{&quot;questionId&quot;:&quot;QUESTION-100219&quot;,&quot;questionName&quot;:&quot;Q7  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;Number&quot;,&quot;responseTypeStored&quot;:&quot;3&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;7&quot;},{&quot;questionId&quot;:&quot;QUESTION-100220&quot;,&quot;questionName&quot;:&quot;Q8  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;List of Values&quot;,&quot;responseTypeStored&quot;:&quot;4&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;8&quot;,&quot;valueList&quot;:[{&quot;value&quot;:&quot;GET &quot;,&quot;storedValue&quot;:&quot;LOV100017&quot;},{&quot;value&quot;:&quot; POST&quot;,&quot;storedValue&quot;:&quot;LOV100018&quot;}]},{&quot;questionId&quot;:&quot;QUESTION-100221&quot;,&quot;questionName&quot;:&quot;Q10  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;Radio Button&quot;,&quot;responseTypeStored&quot;:&quot;10&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;10&quot;,&quot;valueList&quot;:[{&quot;value&quot;:&quot;NEW &quot;,&quot;storedValue&quot;:&quot;LOV100019&quot;},{&quot;value&quot;:&quot; OLD&quot;,&quot;storedValue&quot;:&quot;LOV100020&quot;}]},{&quot;questionId&quot;:&quot;QUESTION-100224&quot;,&quot;questionName&quot;:&quot;Q13  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;Yes or No&quot;,&quot;responseTypeStored&quot;:&quot;6&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;13&quot;,&quot;valueList&quot;:[]}]}]}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response $.sectionList[*].questionList[*].questionId contains [&quot;QUESTION-100216&quot;, &quot;QUESTION-100215&quot;,&quot;QUESTION-100217&quot;,&quot;QUESTION-100219&quot;,&quot;QUESTION-100220&quot;]</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response $.sectionList[*].questionList[*].questionRank contains &quot;6&quot;</span>
+  
+  <span class="lead-duration duration">008ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">004ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-18" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-19">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-19" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://october20.rnd.metricstream.com'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>01:01:21.509 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def signIn = callonce read('util/signin.feature')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def cooky = signIn.cooky</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def db = signIn.db</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def contactName = signIn.contactName</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure cookies = cooky</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">641ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">TC03 Sending blank cooky</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention">configure cookies = &quot;&quot;</div>
+
+  <div id="element-21" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-22" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/metricstream/api/7.0/icr/questionnaire/Questionnaire-100401'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+  
+  <span class="lead-duration duration">626ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>01:01:21.524 request:
+1 &gt; GET https://october20.rnd.metricstream.com/metricstream/api/7.0/icr/questionnaire/Questionnaire-100401
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Cookie: Csrf-Token=2b9e8a309b224934af152ffac3604250b3470c6b02b2fe24682225ae093c809c; JSESSION_ID=12979660-101a-48c6-8bb6-34eaed2afc39; X-DocLink-Token=tbkoUksZAACqtnVSY7V1YQ==; X-TargetUrl=&quot;&quot;; totalSessionTime=1800; totalSessionTimeWarning=60
+1 &gt; Host: october20.rnd.metricstream.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_181)
+
+01:01:22.130 response time in milliseconds: 578.11
+1 &lt; 200
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Security-Policy: frame-ancestors 'self';
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 06 Oct 2020 19:31:22 GMT
+1 &lt; Expires: 0
+1 &lt; Pragma: no-cache
+1 &lt; Referrer-Policy: strict-origin
+1 &lt; Server: nginx
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains
+1 &lt; Vary: User-Agent
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 1; mode=block
+{&quot;sectionList&quot;:[{&quot;sectionId&quot;:&quot;SECTION-100203&quot;,&quot;sectionName&quot;:&quot;Section 1 Data max Section 1 Data max Section 1 Data max Section 1 Data maxSection 1 Data max Section 1 Data max Section 1 Data max Section 1 Data maxSection 1 Data max Section 1 Data max Section 1 Data max Section 1 Data maxSection 1 Data max Section 1 D&quot;,&quot;questionList&quot;:[{&quot;questionId&quot;:&quot;QUESTION-100215&quot;,&quot;questionName&quot;:&quot;Q3 Checkbox  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;Checkbox&quot;,&quot;responseTypeStored&quot;:&quot;11&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;3&quot;,&quot;valueList&quot;:[{&quot;value&quot;:&quot; Obsolete&quot;,&quot;storedValue&quot;:&quot;LOV100014&quot;},{&quot;value&quot;:&quot;New &quot;,&quot;storedValue&quot;:&quot;LOV100012&quot;},{&quot;value&quot;:&quot; old &quot;,&quot;storedValue&quot;:&quot;LOV100013&quot;}]},{&quot;questionId&quot;:&quot;QUESTION-100216&quot;,&quot;questionName&quot;:&quot;Q4  NEW &quot;,&quot;responseType&quot;:&quot;Data Lookup&quot;,&quot;responseTypeStored&quot;:&quot;12&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;4&quot;,&quot;questionInfolet&quot;:&quot;MS_QSM_GRC_AOC&quot;,&quot;questionInfoletStoredValue&quot;:&quot;OBJECT_ID&quot;,&quot;questionInfoletDisplayedValue&quot;:&quot;OBJECT_ID&quot;},{&quot;questionId&quot;:&quot;QUESTION-100217&quot;,&quot;questionName&quot;:&quot;Q5  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;Date&quot;,&quot;responseTypeStored&quot;:&quot;2&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;5&quot;},{&quot;questionId&quot;:&quot;QUESTION-100218&quot;,&quot;questionName&quot;:&quot;Q6  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;Dropdown&quot;,&quot;responseTypeStored&quot;:&quot;7&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;6&quot;,&quot;valueList&quot;:[{&quot;value&quot;:&quot;High &quot;,&quot;storedValue&quot;:&quot;LOV100015&quot;},{&quot;value&quot;:&quot; Low &quot;,&quot;storedValue&quot;:&quot;LOV100016&quot;}]},{&quot;questionId&quot;:&quot;QUESTION-100219&quot;,&quot;questionName&quot;:&quot;Q7  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;Number&quot;,&quot;responseTypeStored&quot;:&quot;3&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;7&quot;},{&quot;questionId&quot;:&quot;QUESTION-100220&quot;,&quot;questionName&quot;:&quot;Q8  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;List of Values&quot;,&quot;responseTypeStored&quot;:&quot;4&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;8&quot;,&quot;valueList&quot;:[{&quot;value&quot;:&quot;GET &quot;,&quot;storedValue&quot;:&quot;LOV100017&quot;},{&quot;value&quot;:&quot; POST&quot;,&quot;storedValue&quot;:&quot;LOV100018&quot;}]},{&quot;questionId&quot;:&quot;QUESTION-100221&quot;,&quot;questionName&quot;:&quot;Q10  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;Radio Button&quot;,&quot;responseTypeStored&quot;:&quot;10&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;10&quot;,&quot;valueList&quot;:[{&quot;value&quot;:&quot;NEW &quot;,&quot;storedValue&quot;:&quot;LOV100019&quot;},{&quot;value&quot;:&quot; OLD&quot;,&quot;storedValue&quot;:&quot;LOV100020&quot;}]},{&quot;questionId&quot;:&quot;QUESTION-100224&quot;,&quot;questionName&quot;:&quot;Q13  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).\n Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\nWhy do we use it?\nIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remainin&quot;,&quot;responseType&quot;:&quot;Yes or No&quot;,&quot;responseTypeStored&quot;:&quot;6&quot;,&quot;questionDescription&quot;:&quot;&quot;,&quot;questionRank&quot;:&quot;13&quot;,&quot;valueList&quot;:[]}]}]}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response $.sectionList[*].questionList[*].questionId contains [&quot;QUESTION-100216&quot;, &quot;QUESTION-100215&quot;,&quot;QUESTION-100217&quot;]</span>
+  
+  <span class="lead-duration duration">009ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response $.sectionList[*].questionList[*].questionRank contains &quot;4&quot;</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">005ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-24">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-24" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-25">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-25" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url 'https://october20.rnd.metricstream.com'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>01:01:22.213 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def signIn = callonce read('util/signin.feature')</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def cooky = signIn.cooky</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def db = signIn.db</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def contactName = signIn.contactName</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">configure cookies = cooky</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1s 085ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-27">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">TC03 Logout of the application</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-27" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-28">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-28" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/metricstream/auth/logout'</span>
+  
+  <span class="lead-duration duration">014ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method Get</span>
+  
+  <span class="lead-duration duration">1s 067ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details">
+        <pre>01:01:22.266 request:
+1 &gt; GET https://october20.rnd.metricstream.com/metricstream/auth/logout
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Cookie: Csrf-Token=2b9e8a309b224934af152ffac3604250b3470c6b02b2fe24682225ae093c809c; JSESSION_ID=12979660-101a-48c6-8bb6-34eaed2afc39; X-DocLink-Token=tbkoUksZAACqtnVSY7V1YQ==; X-TargetUrl=&quot;&quot;; totalSessionTime=1800; totalSessionTimeWarning=60
+1 &gt; Host: october20.rnd.metricstream.com
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_181)
+
+01:01:23.072 response time in milliseconds: 803.26
+1 &lt; 302
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 0
+1 &lt; Content-Security-Policy: frame-ancestors 'self';
+1 &lt; Date: Tue, 06 Oct 2020 19:31:23 GMT
+1 &lt; Expires: 0
+1 &lt; Location: /metricstream/auth/signin.jsp
+1 &lt; Pragma: no-cache
+1 &lt; Referrer-Policy: strict-origin
+1 &lt; Server: nginx
+1 &lt; Set-Cookie: [totalSessionTime=&quot;&quot;; Path=/; Secure, totalSessionTimeWarning=&quot;&quot;; Path=/; Secure, X-TargetUrl=&quot;&quot;; Path=/; Secure, rememberMe=deleteMe; Path=/metricstream; Max-Age=0; Expires=Mon, 05-Oct-2020 19:30:14 GMT; Secure, JSESSION_ID=deleteMe; Path=/metricstream; Max-Age=0; Expires=Mon, 05-Oct-2020 19:30:15 GMT; Secure]
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains
+1 &lt; Vary: User-Agent
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-XSS-Protection: 1; mode=block
+
+01:01:23.076 request:
+2 &gt; GET https://october20.rnd.metricstream.com/metricstream/auth/logout
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Cookie: Csrf-Token=2b9e8a309b224934af152ffac3604250b3470c6b02b2fe24682225ae093c809c; X-DocLink-Token=tbkoUksZAACqtnVSY7V1YQ==; X-TargetUrl=&quot;&quot;; totalSessionTime=&quot;&quot;; totalSessionTimeWarning=&quot;&quot;
+2 &gt; Host: october20.rnd.metricstream.com
+2 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_181)
+
+01:01:23.291 response time in milliseconds: 197.11
+2 &lt; 200
+2 &lt; Cache-Control: no-cache, no-store, must-revalidate
+2 &lt; Connection: keep-alive
+2 &lt; Content-Security-Policy: frame-ancestors 'self';
+2 &lt; Content-Type: text/html;charset=UTF-8
+2 &lt; Date: Tue, 06 Oct 2020 19:31:23 GMT
+2 &lt; Expires: 0
+2 &lt; Pragma: no-cache
+2 &lt; Referrer-Policy: strict-origin
+2 &lt; Server: nginx
+2 &lt; Set-Cookie: locale=en_US; Secure
+2 &lt; Strict-Transport-Security: max-age=31536000; includeSubdomains
+2 &lt; Vary: Accept-Encoding,User-Agent
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; X-XSS-Protection: 1; mode=block
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;meta charset=&quot;utf-8&quot;&gt;
+		&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+		&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, height=device-height, initial-scale=1.0&quot;&gt;
+		&lt;title&gt;Signin - MetricStream Enterprise GRC Platform&lt;/title&gt;
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/signin/signin.css&quot;&gt;
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/ui/css/msi.css&quot;&gt;
+		&lt;script src=&quot;/ui/js/libs/jquery/jquery.js&quot;&gt;&lt;/script&gt;
+		&lt;script src=&quot;/ui/js/libs/bootstrap/bootstrap.js&quot;&gt;&lt;/script&gt;
+		&lt;script src=&quot;/ui/js/src/utils/UserLogin.js&quot;&gt;&lt;/script&gt;
+		
+		
+				
+		
+
+
+
+
+
+		
+
+		
+		
+		
+		
+		
+		
+		
+        
+        
+        
+        
+		
+
+		&lt;script type=&quot;text/javascript&quot;&gt;
+			var nullflag = false;
+			var interVal = null;
+			$(function(){
+				$(&quot;#username, #passwordHolder&quot;).keyup(function(event) {
+					if (event.keyCode === 13) {
+						$(&quot;.rtPanelSubmitBtnBg&quot;).click();
+					}
+				});
+				announcer($('#errorMsgBox').text(),true);
+				$('.rtPanelSubmitBtnBg').click(function(event){
+					event.preventDefault(); //this will prevent the default submit
+					var isOtpLogin = $(&quot;#getotp&quot;).is(':checked');
+					var status = false;
+					status = checkUserName(isOtpLogin);
+					if(status){
+							$('#signInForm').submit();
+					}
+				});
+			});
+
+			function submitForm(){
+				var password = $(&quot;#passwordHolder&quot;);
+				var realPassword = $(&quot;#password&quot;);
+				var otp = $(&quot;#otp&quot;);
+				var src = $(&quot;#src&quot;);
+				realPassword.val(password.val());
+				password.val('');
+				var isOtpLogin = $(&quot;#getotp&quot;).is(':checked');
+				if(!isOtpLogin){
+					document.signInForm.action = &quot;/metricstream/auth/basic?locale=en_US&quot;;
+				}else{
+					otp.val(realPassword.val())
+					src.val(&quot;login&quot;)
+					password.val('');
+					realPassword.val('');
+					document.signInForm.action = &quot;/metricstream/auth/otp&quot;;
+				}
+			}
+			function checkUserName(isOtpLogin){
+				if(document.getElementById('errorMsgBox')){
+					document.getElementById('errorMsgBox').hidden=true;
+				}
+				var userName = document.getElementById('username');
+				if(userName){
+					var status = false;
+					if (userName.value === &quot;&quot; || userName.value.trim().length === 0) {
+						applyCSS(&quot;username&quot;, true);
+						$('#username').attr(&quot;aria-describedby&quot;,&quot;uname_null&quot;);
+						$('#username').attr(&quot;aria-invalid&quot;,&quot;true&quot;);
+						$(&quot;#uname_null&quot;).show();
+						$(&quot;#forgotUname&quot;).css(&quot;margin-top&quot;,&quot;-10px&quot;);
+						nullflag = true;
+						$('#username').focus();
+						checkPassword(isOtpLogin);
+						status = false; // cancel submission
+					}else if (userName.value || userName.value.length &gt; 0) {
+						applyCSS(&quot;username&quot;, false);
+						userName.value = userName.value.trim();
+						$('#username').removeAttr(&quot;aria-describedby&quot;,&quot;uname_null&quot;);
+						$('#username').attr(&quot;aria-invalid&quot;,&quot;false&quot;);
+						nullflag = false;
+						status = checkPassword(isOtpLogin);
+					}
+					return status;
+				}
+			}
+
+			function checkPassword(isOtpLogin) {
+				var password = $(&quot;#passwordHolder&quot;);
+				if(password){
+					if (!password.val()) {
+						applyCSS(&quot;password&quot;, true);
+						if(!isOtpLogin){
+							$('#passwordHolder').attr(&quot;aria-describedby&quot;,&quot;pwd_null&quot;);
+							$('#passwordHolder').attr(&quot;aria-invalid&quot;,&quot;true&quot;);
+							$(&quot;#pwd_null&quot;).show();
+						}else{
+							$('#passwordHolder').attr(&quot;aria-describedby&quot;,&quot;otp_null&quot;);
+							$('#passwordHolder').attr(&quot;aria-invalid&quot;,&quot;true&quot;);
+							$(&quot;#otp_null&quot;).show();
+						}
+
+						if(!nullflag){
+							nullflag = true;
+							$('#passwordHolder').focus();
+						}
+						return false; // cancel submission
+					}else{
+						applyCSS(&quot;password&quot;, false);
+						$('#passwordHolder').removeAttr(&quot;aria-describedby&quot;,&quot;pwd_null&quot;);
+						$('#passwordHolder').attr(&quot;aria-invalid&quot;,&quot;false&quot;);
+						nullflag = false;
+						return true;
+					}
+				}
+			}
+			function applyCSS(field, isError){
+				var errorLable = document.getElementsByName(field+&quot;ErrorLble&quot;);
+				if(errorLable &amp;&amp; errorLable[0]){
+					errorLable[0].hidden = !isError;
+				}
+			}
+
+			function announcer(message, annoucementEntirety){
+							$('#announcerPlaceholder').html('&lt;p&gt;' + message + '&lt;/p&gt;');
+			                if(annoucementEntirety)
+			                    $('#announcerPlaceholder').attr('aria-atomic', annoucementEntirety);
+
+			}
+			function getLocalizedData(){
+				var selected_locale = &quot;&quot;;
+				if( document.getElementById('locale').hidden){
+					selected_locale = document.getElementById('localeDevice').value;
+				}else{
+					selected_locale = document.getElementById('locale').value;
+				}
+				var url = window.location.href;
+				var position = url.indexOf('?');
+				if(position &gt; 0){
+					url = url.slice(0,position);
+				}
+				var action = document.getElementById('action').value;
+				if(action !== 'null'){
+					url  = url + '?'+'type='+action;
+				}
+				document.getElementById('locale').hidden = true;
+				if(url.indexOf('?') &gt; 0){
+					url  = url + '&amp;'+'locale='+selected_locale;
+				}else{
+					url  = url + '?'+'locale='+selected_locale;
+				}
+				window.location.href  = url;
+			}
+
+			function languageSelected(selected_locale){
+				var ldapTypeStr = &quot;type=ldap&quot;;
+				var localeStr = &quot;locale=&quot;;
+				var url = window.location.href;
+				if(url.indexOf(localeStr) !== -1){
+					url = url.substring(0, url.indexOf(localeStr));
+				}
+				if(url.substring(0, url.indexOf(localeStr)) == &quot;&quot; &amp;&amp; url.indexOf(ldapTypeStr) &gt; 0){
+					window.location.href  = url.substring(0, url.indexOf(ldapTypeStr)+ldapTypeStr.length) +'&amp;'+localeStr+selected_locale;
+				}else{
+					window.location.href  = url.substring(0, url.indexOf('?'+localeStr)) + '?'+localeStr+selected_locale;
+				}
+
+			}
+			function localekeyhandle(e){
+				if(e.which !== 32 &amp;&amp; e.which !== 9){
+					e.preventDefault();
+				}
+
+			}
+
+			function otpGeneration(){
+				var uname = $(&quot;#username&quot;).val();
+						if(uname ===&quot;&quot; || uname===null){
+							$(&quot;#getotp&quot;).prop('checked', false);
+							$(&quot;#uname_null&quot;).show();
+							$(&quot;#forgotUname&quot;).css(&quot;margin-top&quot;,&quot;-10px&quot;);
+							nullflag = true;
+							$('#username').focus();
+						}else{
+							$(&quot;#uname_null&quot;).hide();
+							$(&quot;#forgotPass&quot;).hide();
+							$(&quot;#pwd&quot;).text(&quot;OTP&quot;);
+							$(&quot;#sr-pwd&quot;).text(&quot;OTP&quot;);
+							$.ajax({
+								  type: &quot;POST&quot;,
+								  url: &quot;/metricstream/auth/otp&quot;,
+								  data: { username: $(&quot;#username&quot;).val(), src:&quot;login&quot;},
+								  cache: false,
+								  success: function(data){
+								  },
+								  complete:function(data){
+										  startTimer(2, 'timer');
+										  $('#otp_success').show();
+										  $('#otp_success').focus();
+										  announcer($('#otp_success').text(),true);
+										  $('#passwordHolder').val('');
+										  $(&quot;#pwd_null&quot;).hide();
+										  $('#passwordHolder').focus();
+								  },
+								  error:function(error){
+								  }
+							});
+						}
+			}
+
+			$(function(){
+				$(&quot;#otp_success&quot;).hide();
+
+				$(&quot;#username&quot;).on('change', function(event){
+						document.getElementById(&quot;timer&quot;).innerHTML='';
+						clearInterval(interVal);
+						$(&quot;#otp_success&quot;).hide();
+						$(&quot;#getotp&quot;).prop('checked', false);
+						$(&quot;#forgotPass&quot;).show();
+						$(&quot;#pwd&quot;).text(&quot;Password&quot;);
+						$(&quot;#sr-pwd&quot;).text(&quot;Password&quot;);
+				});
+
+				$('#getotp').on('click',function(){
+					if($(&quot;#getotp&quot;).is(':checked')===true){
+						otpGeneration();
+					}else{
+						document.getElementById(&quot;timer&quot;).innerHTML='';
+						clearInterval(interVal);
+						$(&quot;#pwd&quot;).text(&quot;Password&quot;);
+						$(&quot;#sr-pwd&quot;).text(&quot;Password&quot;);
+						$(&quot;#otp_success&quot;).hide();
+						$(&quot;#forgotPass&quot;).show();
+						$(&quot;#otp_null&quot;).hide();
+					}
+				});
+
+				$(document.body).on('click','#getotplink', function(e) {
+					otpGeneration();
+				});
+
+			});
+
+			function startTimer(minutes, dom) {
+				var duration = 60 * minutes;
+				display = document.querySelector('#' + dom);
+				var timer = duration, minutes, seconds;
+				interVal = setInterval(function () {
+								minutes = parseInt(timer / 60, 10);
+								seconds = parseInt(timer % 60, 10);
+								minutes = minutes &lt; 10 ? &quot;0&quot; + minutes : minutes;
+								seconds = seconds &lt; 10 ? &quot;0&quot; + seconds : seconds;
+								//display.textContent = minutes + &quot;:&quot; + seconds;
+								document.getElementById(dom).innerHTML=&quot;&lt;p&gt;Please wait for &quot; + minutes + &quot;minutes &quot; + seconds + &quot;seconds to get resend OTP link.&lt;/p&gt;&quot;;
+								if (--timer &lt; 0) {
+									clearInterval(interVal);
+									document.getElementById(dom).innerHTML=&quot;&lt;p&gt;Didn't receive OTP yet? &lt;a id='getotplink'&gt;Resend OTP&lt;/a&gt;&lt;/p&gt;&quot;;
+									$(&quot;#otp_success&quot;).hide();
+								}
+								}, 1000);
+			}
+        &lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;div id=&quot;mainPanel&quot;&gt;
+			&lt;input type=&quot;hidden&quot; name=&quot;action&quot; id=&quot;action&quot; value=&quot;null&quot;&gt;
+			&lt;div  id=&quot;leftPanel&quot; class=&quot;col-md-6 col-sm-6 hidden-xs hidden-sm leftPanelBg&quot;&gt;
+				&lt;div class=&quot;container col-md-12 paddingTop5Em&quot;&gt;
+					&lt;div class=&quot;col-md-2&quot;&gt;&lt;/div&gt;
+					&lt;div class=&quot;col-md-8 lftPanelLogoBg&quot;&gt;
+						&lt;label&gt;&lt;font&gt;&lt;img class=&quot;lftPanelLogoImage&quot; src=&quot;/images/signin/msi_logo_white.png&quot; alt='MetricStream Logo' aria-label='MetricStream Logo'&gt;&lt;/font&gt;
+						&lt;/label&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-md-2&quot;&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;text-align-center&quot;&gt;
+					&lt;label&gt;&lt;font class=&quot;lftPanelHeadingTxtBg&quot;&gt;GRC Solutions for the &lt;br&gt;Enterprise of Tomorrow&lt;/font&gt;&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;homePageContent&quot;&gt;
+					&lt;label &gt;&lt;font class=&quot;lftPanelBodyTxtBg&quot;&gt;MetricStream's extensive range of GRC Apps enables you to &lt;br&gt; manage your risks, compliance and governance activities in a &lt;br&gt;holistic, consistent and efficient manner.&lt;/font&gt;&lt;/label&gt;
+				&lt;/div&gt;
+				&lt;br&gt;
+				&lt;div class=&quot;container col-md-12 paddingTop3EM&quot; &gt;
+					&lt;div class=&quot;col-md-2&quot;&gt; &lt;/div&gt;
+					&lt;div class=&quot;col-md-8 text-align-center&quot; &gt;
+						&lt;img style=&quot;width:70%;&quot; src=&quot;/images/signin/login-icons.png&quot; aria-hidden=&quot;true&quot; alt='MetricStream Icon' aria-label='MetricStream Icon' &gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-md-2&quot;&gt; &lt;/div&gt;
+
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div id=&quot;rightPanel&quot; class=&quot;col-sm-6 col-lg-6 col-md-6 rtPanelBg&quot;&gt;
+				&lt;!--Header for small device --&gt;
+				&lt;div class=&quot;col-sm-6 col-md-6 col-lg-6 hidden-lg hidden-md smallHeader&quot;&gt;
+					&lt;div class=&quot;row&quot; style=&quot;background-color:#006DB7; flex-direction: row;justify-content: space-between; align-items: center;height:50px;&quot;&gt;
+						&lt;div class=&quot;col-sm-10 smLeftHeaderWidth&quot;&gt;
+							&lt;img class=&quot;lftPanelSmallDeviceLogoImage&quot; src=&quot;/images/signin/msi_logo_white.png&quot;&gt;
+						&lt;/div&gt;
+						&lt;!-- Logo for small device--&gt;
+						&lt;div class=&quot;col-sm-2 globalIconSmallDeviceDivBg smRightHeaderWidth&quot;&gt;
+							&lt;button class=&quot;dropdown-toggle globalIconBtnSmallDeviceBg&quot; data-toggle=&quot;dropdown&quot;&gt;&lt;span class=&quot;icn icn-globe globalIconBtnSmallDeviceBg&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+							&lt;ul class=&quot;dropdown-menu localeItemDropDownUL&quot;&gt;
+								
+							&lt;/ul&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;!--Header for large screen --&gt;
+				&lt;div class=&quot;col-md-12 hidden-xs hidden-sm largeHeader&quot;&gt;
+					&lt;div class=&quot;col-md-8 col-lg-6 paddingLeft05Em&quot;&gt;
+						&lt;div &gt;
+							&lt;button disabled id=&quot;lgGlobeBtn&quot; name=&quot;lgGlobeBtn&quot; class=&quot;icn icn-globe globalIconBg&quot; aria-hidden=&quot;true&quot;&gt;&lt;/button&gt;
+							
+							&lt;label id=&quot;localeLabel&quot; class=&quot;localString&quot;&gt;English-United States&lt;/label&gt;
+							
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-md-6 col-lg-6 rtPanelHeaderMenu menuLinks text-right&quot;&gt;
+						&lt;label &gt; &lt;a href=&quot;http://www.grcjourney.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;textDecoration&quot;&gt;GRC Journey&lt;/a&gt;&lt;/label&gt;
+						&lt;label class=&quot;rtPanelHeaderMenuSeperator&quot; aria-hidden=&quot;true&quot;&gt;|&lt;/label&gt;
+						&lt;label&gt; &lt;a href=&quot;http://www.complianceonline.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;textDecoration&quot;&gt;Training&lt;/a&gt;&lt;/label&gt;
+						&lt;label class=&quot;rtPanelHeaderMenuSeperator&quot; aria-hidden=&quot;true&quot;&gt;|&lt;/label&gt;
+						&lt;label&gt; &lt;a href=&quot;http://www.metricstream.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;textDecoration&quot;&gt;MetricStream&lt;/a&gt;&lt;/label&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-md-4 hidden-xs hidden-sm rtPanelHeaderMenu menuDropdown text-right&quot;&gt;
+					  &lt;div class=&quot;dropdown&quot;&gt;
+						&lt;button class=&quot;dropdown-toggle openLinksBg&quot; data-toggle=&quot;dropdown&quot;&gt;&lt;span class=&quot;icn icn-ellipsis&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+						&lt;ul class=&quot;dropdown-menu linksDropdown&quot;&gt;
+						  &lt;li&gt;&lt;a href=&quot;http://www.grcjourney.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;linkBg&quot;&gt;GRC Journey&lt;/a&gt;&lt;/li&gt;
+						  &lt;li&gt;&lt;a href=&quot;http://www.complianceonline.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;linkBg&quot;&gt;Training&lt;/a&gt;&lt;/li&gt;
+						  &lt;li&gt;&lt;a href=&quot;http://www.metricstream.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;linkBg&quot;&gt;MetricStream&lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;
+					  &lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;!-- Sign In label and Form --&gt;
+				&lt;div&gt;
+				&lt;p id=&quot;announcerPlaceholder&quot; class=&quot;sr-only&quot; role=&quot;alert&quot; aria-live=&quot;assertive&quot; aria-atomic=&quot;false&quot;&gt;&lt;/p&gt;
+				&lt;p id=&quot;error&quot; hidden&gt;Error&lt;/p&gt;
+				&lt;form class=&quot;rtPanelSignInForm&quot; name=&quot;signInForm&quot; id=&quot;signInForm&quot; method=&quot;post&quot; enctype=&quot;application/x-www-form-urlencoded&quot; autocomplete=&quot;off&quot; aria-label='Sign-In to M7 Application '  onsubmit=&quot;return submitForm();&quot; novalidate  &gt;
+					&lt;h1 class=&quot;rtPanelSignInHeading&quot;&gt;Sign In&lt;/h1&gt;
+					
+
+					&lt;div class=&quot;login-float-field-div&quot;&gt;
+						&lt;div class=&quot;form-group rtPanelUN&quot;&gt;
+							&lt;span class=&quot;sr-only&quot;&gt;Username&lt;/span&gt;
+							&lt;input class=&quot;login-input-floating&quot; type=&quot;text&quot; id=&quot;username&quot; aria-invalid=&quot;false&quot; name=&quot;username&quot; aria-labelledby=&quot;uname&quot; autocomplete=&quot;off&quot; autofocus=&quot;&quot; aria-required=&quot;true&quot; required&gt;
+							&lt;label class=&quot;login-label-floating login-label-floating-username&quot; id=&quot;uname&quot; aria-hidden=&quot;true&quot;&gt;Username&lt;/label&gt;
+							&lt;label name=&quot;usernameErrorLble&quot; hidden=&quot;true&quot; class=&quot;errorTextBg&quot; id=&quot;uname_null&quot;&gt;Please enter your username&lt;/label&gt;
+						&lt;/div&gt;
+
+
+						&lt;div class=&quot;form-group rtPanelUN&quot; id=&quot;passwordField&quot; style=&quot;margin-top: 1%;&quot;&gt;
+							&lt;span id=&quot;sr-pwd&quot; class=&quot;sr-only&quot;&gt;Password&lt;/span&gt;
+							&lt;input class=&quot;login-input-floating&quot; type=&quot;password&quot; id=&quot;passwordHolder&quot; aria-invalid=&quot;false&quot; aria-labelledby=&quot;pwd&quot; name=&quot;passwordHolder&quot; aria-required=&quot;true&quot; required&gt;
+
+							&lt;input type=&quot;hidden&quot; id=&quot;password&quot; name=&quot;password&quot;&gt;
+							&lt;input type=&quot;hidden&quot; id=&quot;otp&quot; name=&quot;otp&quot;&gt;
+							&lt;input type=&quot;hidden&quot; id=&quot;src&quot; name=&quot;src&quot;&gt;
+							&lt;label class=&quot;login-label-floating login-label-floating-password&quot; id=&quot;pwd&quot; aria-hidden=&quot;true&quot; &gt;Password&lt;/label&gt;
+							&lt;label name=&quot;passwordErrorLble&quot; hidden=&quot;true&quot; id=&quot;pwd_null&quot;  class=&quot;errorTextBg&quot;&gt;Please enter your password&lt;/label&gt;
+						&lt;label name=&quot;passwordErrorLble&quot; hidden=&quot;true&quot; id=&quot;otp_null&quot;  class=&quot;errorTextBg&quot;&gt;Please enter your OTP&lt;/label&gt;
+						&lt;/div&gt;
+
+
+						
+
+						&lt;div id=&quot;passwordLoginSec&quot; class=&quot;form-group rtPanelSubmitBtnPosition&quot;&gt;
+							&lt;button id=&quot;passwordLoginBtn&quot; type=&quot;button&quot; class=&quot;btn-signin rtPanelSubmitBtnBg&quot;&gt;Sign In&lt;/button&gt;
+
+
+						
+						&lt;div id=&quot;forgotPass&quot; class=&quot;forgot-links&quot;&gt;
+							&lt;a  href=&quot;/metricstream/loginServices/SigninHelpValidate?locale=en_US&amp;forgotOption=uname&quot;&gt; Recover Username &lt;/a&gt;
+
+							&lt;a style=&quot;margin-left: 1em;&quot; href=&quot;/metricstream/loginServices/SigninHelpValidate?locale=en_US&amp;forgotOption=pwd&quot;&gt; Recover Password &lt;/a&gt;
+						&lt;/div&gt;
+						
+
+						&lt;/div&gt;
+						&lt;div class=&quot;alert alert-success&quot; style=&quot;margin-left:2em;margin-top:2em;width:75%&quot; role=&quot;alert&quot; id=&quot;otp_success&quot;&gt;
+						&lt;strong&gt;Success&lt;/strong&gt;
+						&lt;br&gt;Your request has been processed. A new OTP has been sent to your registered email id
+						&lt;/div&gt;
+						
+					&lt;/div&gt;			
+				&lt;/form&gt;
+				&lt;div class=&quot;copyRightSignIn&quot;&gt;
+							&lt;label class=&quot;copyRightTextBg&quot;&gt;&amp;copy 2020 MetricStream Inc. All Rights Reserved. 
+							&lt;u&gt;&lt;a href=&quot;http://www.metricstream.com/about-us/privacy-policy.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; class=&quot;rtPanelPolicyLink&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/u&gt;
+							&lt;/label&gt;
+				&lt;/div&gt;	
+				&lt;/div&gt;
+			&lt;/div&gt;		
+		&lt;/div&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+01:01:23.306 xml parsing failed, response data type set to string: org.xml.sax.SAXParseException; lineNumber: 135; columnNumber: 20; The entity name must immediately follow the '&amp;' in the entity reference.</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match responseCookies !contains { JSESSION_ID: &quot;#notnull&quot; }</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
